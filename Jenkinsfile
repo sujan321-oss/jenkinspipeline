@@ -15,7 +15,7 @@ pipeline {
         stage ("runapp_stage_environment"){
             steps{
                     sh 'docker remove nodeproj | true'
-                    sh 'docker run -p 8001:8001 --name nodeproj  server'    
+                    sh 'docker run -d -p 8001:8001 --name nodeproj  server'    
             }
 
         }
