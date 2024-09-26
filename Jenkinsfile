@@ -22,4 +22,16 @@ pipeline {
         
     }
 
+
+     post {
+  
+        success {
+            sh 'echo "sucessful"'
+        }
+        failure {
+      
+            sh 'echo "failed"'
+        }
+    }
+
 }
