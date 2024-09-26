@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+    stages {
+        stage ("Build") {
+                git branch : 'main' , url: https://github.com/sujan321-oss/jenkinspipeline.git
+        }  
+    }
+
+}
