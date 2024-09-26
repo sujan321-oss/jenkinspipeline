@@ -5,7 +5,7 @@ pipeline {
             steps{
                 git branch : 'main' , url: 'https://github.com/sujan321-oss/jenkinspipeline.git'
 
-                dir("application"){
+                dir("application") {
                     sh 'docker build -t server .'
                 }
 
